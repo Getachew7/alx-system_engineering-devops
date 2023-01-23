@@ -6,7 +6,7 @@ sudo add-apt-repository -y ppa:vbernat/haproxy-2.2
 
 sudo apt-get -y install haproxy=2.2.\*
 
-cat >> /etc/haproxy/haproxy.cfg << EOF
+cat >> sudo /etc/haproxy/haproxy.cfg << EOF
 
 frontend My_server
 	bind *:80
