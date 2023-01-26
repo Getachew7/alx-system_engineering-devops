@@ -36,12 +36,12 @@ defaults
 
 frontend My_server
         bind *:80
-        bind *:443 ssl crt /etc/letsencrypt/live/www.nicholasik.tech/fullchain.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.ghion.tech/fullchain.pem
         mode http
         default_backend web_server
 
 backend web_server
         balance roundrobin
         mode http
-        server web-01 18.204.15.114:80 check
-        server web-02 52.90.22.244:80 check
+        server web-01 54.144.150.74:80 check
+        server web-02 3.84.222.21:80 check
